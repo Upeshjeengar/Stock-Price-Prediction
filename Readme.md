@@ -1,6 +1,54 @@
-# Stock Price Prediction Using ARIMA 
-**1. Conducted an extensive Exploratory Data Analysis (EDA) on stock market data.   
-2. Visualized the daily closing prices of the stock to identify patterns and trends in the data.   
-3. Employed statistical techniques, such as the Hypothesis, Dickey-Fuller test, and ACF/PACF plots, to evaluate the data's quality and identify any potential issues.   
-4. Conducted stationarity checks on the data to determine its nature and used adfuller test and null hypothesis to identify any trends or seasonality present.   
-5. Employed Time Series Analysis techniques using ARIMA to build a prediction model for the stock prices and predicted next 10 days stock prices.**
+---
+
+# Stock Price Prediction with ARIMA
+
+This project demonstrates time series forecasting of stock prices using the ARIMA model in Python. The ARIMA model is a widely used statistical technique for time series forecasting, which is particularly useful for financial data like stock prices.
+
+## What is ARIMA?
+
+ARIMA stands for Autoregressive Integrated Moving Average. It is a powerful statistical model that predicts future values based on past data. The ARIMA model is characterized by three parameters:
+
+- **p**: The number of lag observations (autoregressive part).
+- **d**: The degree of differencing to achieve stationarity.
+- **q**: The size of the moving average window.
+
+## Project Overview
+
+In this project, we use historical stock price data to build an ARIMA model to predict future stock prices. The data is collected from Yahoo Finance using the `yfinance` API.
+
+### Steps:
+
+1. **Data Collection**: Fetching historical stock data from Yahoo Finance.
+2. **Data Preparation**: Selecting the relevant features (`Date` and `Close` prices).
+3. **Data Visualization**: Plotting the historical stock prices.
+4. **ARIMA Modeling**: Training the ARIMA model on the prepared data.
+5. **Forecasting**: Predicting future stock prices using the ARIMA model.
+6. **Model Evaluation**: Assessing the accuracy of the model's predictions.
+
+### Libraries Used:
+
+- `pandas`: For data manipulation and analysis.
+- `yfinance`: For downloading historical stock data.
+- `matplotlib`: For data visualization.
+- `statsmodels`: For ARIMA model implementation.
+
+### How to Run
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Upeshjeengar/Stock-Price-Prediction.git
+   ```
+2. Install the required dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Run the Jupyter Notebook to follow along with the code and results:
+   ```sh
+   jupyter notebook Stock_Price_Prediction_with_ARIMA.ipynb
+   ```
+
+### Results
+
+The ARIMA model forecasts future stock prices based on past trends. The final section of the notebook demonstrates the predictions and compares them with actual stock prices to evaluate the model's performance.
+
+---
