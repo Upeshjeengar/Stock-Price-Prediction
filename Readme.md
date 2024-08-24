@@ -46,7 +46,10 @@ In this project, we use historical stock price data to build an ARIMA model to p
    ```sh
    jupyter notebook Stock_Price_Prediction_with_ARIMA.ipynb
    ```
+### Customization
+You can choose any stock for prediction by updating the _`stock_to_predict`_ variable in the code. This variable is used to specify the stock ticker symbol, which is fetched from Yahoo Finance using the yfinance library.
 
+### 
 ### Results
 
 The ARIMA model forecasts future stock prices based on past trends. The final section of the notebook demonstrates the predictions and compares them with actual stock prices to evaluate the model's performance.
